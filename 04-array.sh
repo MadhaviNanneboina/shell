@@ -7,5 +7,5 @@ DAYS=("sunday" "monday" "twesday" "thrusday" "friday" "saturday")
 ####here index of array is 5
 echo "please enter week value:"
 read DAY
-echo "entered day is: {$DAY}"
+echo "entered day is: $DAY"
 
