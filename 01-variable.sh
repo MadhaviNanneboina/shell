@@ -1,7 +1,7 @@
 #!/bin/bash
 ### variable declaration
-PERSON1=loukya
-PERSON2=vishruth
+PERSON1=ravi
+PERSON2=rahul
 
 ###refering the variable
 
