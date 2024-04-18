@@ -1,7 +1,7 @@
 #!/bin/bash
 NUMBER=$1
 
-if [ $NUMBER / 2]
+if [ $NUMBER / 2 ]
 then 
     echo "given number is even number"
 else
