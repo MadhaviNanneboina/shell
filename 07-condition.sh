@@ -1,9 +1,10 @@
 #!/bin/bash
-NUMBER=$1
+echo "enter your number:"
+ read X
 
-if [ $NUMBER / 2 ]
+if [ $((X%2)) -eq 0 ]
 then 
-    echo "given number is even number"
+    echo "$X is even number"
 else
-    echo "given nuber is odd number"
+    echo "$X is odd number"
 fi            
