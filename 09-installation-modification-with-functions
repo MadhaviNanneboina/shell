@@ -38,7 +38,7 @@ VALIDATE()
     fi
 }
 
-dnf install mysqlll-server -y &>> $LOGFILE   #redirectiond command results into lofile
+dnf install mysql-server -y &>> $LOGFILE   #redirectiond command results into lofile
 
 VALIDATE $? "installing mysql server"
 
