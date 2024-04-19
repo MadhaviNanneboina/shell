@@ -28,6 +28,7 @@ VALIDATE()
     Exit 3
     else
     echo "$2 ...success"
+    fi
 }
 
 dnf install mysql-server -y &>> $LOGFILE   #redirectiond command results into lofile
