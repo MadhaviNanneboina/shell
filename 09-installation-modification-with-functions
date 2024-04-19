@@ -10,7 +10,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 
 ###logfile creation
 SCRIPTNAME=$(echo $0 | cut -d "." -f1)
-LOGFILE=$SCRIPTNAME-$TIMESTAMP.log
+LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log
 
 #####mentioning colors for user look
 R="\e[31m]"
