@@ -43,3 +43,8 @@ else
 fi   
 
 ######for every command in shell script we have to check wheather the command was successfully installed or not
+## -ne--->not equal to
+### -eq---->equal to
+####-gt--->greater than
+#### -lt--->less than
+#### -ge--->greaterthan equal to
