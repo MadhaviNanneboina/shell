@@ -39,6 +39,5 @@ then
 else
     dnf install $i -y &>>LOGFILE
     VALIDATE &?  "$i package installed "
-
-
+fi
 done
