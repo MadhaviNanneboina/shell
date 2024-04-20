@@ -38,7 +38,7 @@ then
     echo -e "package already installed...... $Y SKIPPING $N"
 else
     dnf install $i -y &>>LOGFILE
-    &? "package installed $i"
+    VALIDATE &?  "$i package installed "
 
 
 done
