@@ -19,5 +19,26 @@ then
  else
  echo "your super user"
 fi 
-
+VALIDATE(){
+    if [ $1 -ne 0 ]
+    then 
+        echo -e "$2.....$R FAILURE $N"
+        exit 2
+    else
+        echo -e "$2......$G SUCCESS $N"
+    fi
+}
 echo "all packages:$@"
+for i in $@
+do
+echo "package to install:$i"
+dnf list installed $i &>>LOGFILE
+if [ $? -eq 0 ]
+then 
+    echo -e "package already installed...... $Y SKIPPING $N"
+else
+    dnf install $i -y &>>LOGFILE
+    &? "package installed $i"
+
+
+done
