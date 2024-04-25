@@ -1,4 +1,4 @@
-source_directory=/tmp/appop-logs
+source_directory=/tmp/app-logs
 
 
 #colors
