@@ -36,7 +36,7 @@ old_logs=$(find "$Source_directory" -name "*.log" -mtime +14)
 # Zip old log files
 if [ -n "$old_logs" ]
 then
-    zip -j "$Source_directory/old_logs.zip" $old_logs
+    zip "$Source_directory/old_logs.zip" $old_logs
 
     # Check if zip was successful
     if [ $? -eq 0 ] 
