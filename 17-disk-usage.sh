@@ -14,5 +14,5 @@ then
 fi
 done <<< $disk_usage
 echo -e "message is :$message"
-echo "This is a test mail & Date $(date)" | mail -s "message" madhaviyadav1994@gmail.com
+echo "$message" | mail -s "disk_usage_alert_message" madhaviyadav1994@gmail.com
 # echo "body"|mail -s "subject" to address --->is syntax for send mails
