@@ -43,7 +43,7 @@ then
     then
         echo "Old log files zipped successfully."
         # Transfer zip file to another server
-        scp "$Source_directory/old_logs.zip" "$denstnation_server"
+        scp "$old_logs.zip" "$denstnation_server"
         # Check if transfer was successful
         if [ $? -eq 0 ]; then
             echo "Zip file transferred successfully to $destination_server."
