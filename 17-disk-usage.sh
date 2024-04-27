@@ -10,7 +10,7 @@ folder=$(echo $line |awk -F " " '{print $NF}')
 if [ $usage -ge $disk_theshould ]
 then
 #to append results will use + symbol to avoid override
-    message+="$folder is more than $disk_theshould , current usage is $usage"
+    message+="$folder is more than $disk_theshould , current usage is $usage /n"
 fi
 done <<< $disk_usage
-echo "message is :$message"
+echo -e "message is :$message"
