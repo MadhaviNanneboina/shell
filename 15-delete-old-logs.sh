@@ -20,9 +20,11 @@ fi
 FILES=$(find $source_directory -name "*.log" -mtime +14)
 #echo "files to delete:$FILES"
 
+#to delete each file
 while IFS= read -r line
 do 
 echo "deleting files:$line"
 rm -rf $line
 
 done <<<$FILES
+#we can schedule this file to run every day mid night 1 or 2 clock to delete old files
